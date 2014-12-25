@@ -13,14 +13,25 @@
 	<description>第三方云服务</description>
 
 	<dependencies>
+		<!-- 参见developer.baidu.com -->
 		<dependency>
-			<groupId>baidu</groupId>
-			<artifactId>Baidu-Frontia-Android</artifactId>
+			<groupId>com.baidu</groupId>
+			<artifactId>frontia</artifactId>
 			<version>2.0.7</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 
+		<!-- 参见open.weixin.qq.com -->
+		<dependency>
+			<groupId>com.tencent</groupId>
+			<artifactId>wechat-libammsdk</artifactId>
+			<version>1.0.0</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- NGBF -->
 		<dependency>
 			<groupId>com.kingstar.ngbf</groupId>
 			<artifactId>ngbf-ms-util</artifactId>
@@ -28,15 +39,17 @@
 			<type>jar</type>
 			<scope>provided</scope>
 		</dependency>
-		
+
+		<!-- 3rd Jars -->
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
 			<version>20090211</version>
 			<type>jar</type>
-			<scope>compile</scope>
+			<scope>provided</scope>
 		</dependency>
-		
+
+		<!-- Android -->
 		<dependency>
 			<groupId>com.google.android</groupId>
 			<artifactId>android</artifactId>

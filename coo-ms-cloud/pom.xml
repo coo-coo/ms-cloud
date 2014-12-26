@@ -10,7 +10,7 @@
 	<artifactId>coo-ms-cloud</artifactId>
 	<version>1.0.0.0</version>
 	<name>coo-ms-cloud</name>
-	<description>第三方云服务</description>
+	<description>Android版第三方云服务调用封装</description>
 
 	<dependencies>
 		<!-- 参见developer.baidu.com -->

@@ -17,6 +17,10 @@ public final class WeixinFactory {
 	 * 微信APPID,参见https://open.weixin.qq.com,消磨(正式)
 	 */
 	public static String APP_ID = "wx8547e71956ff84f6";
+	/**
+	 * 微信APPID,消磨(调试)
+	 */
+	// public static String APP_ID = "wxbf596cee81b59c6a";
 
 	@SuppressWarnings("unused")
 	private static String APP_SECRET = "c6bf3d47170ea4b7474707ceedbb7039";
@@ -44,9 +48,7 @@ public final class WeixinFactory {
 		msg.description = obj.getDescription();
 		msg.thumbData = WeixinHelper.bmpToByteArray(obj.getThumb(),
 				false);
-		
-		
-		
+
 		// 构造一个Req
 		SendMessageToWX.Req req = new SendMessageToWX.Req();
 		req.transaction = buildTransaction("NL");
